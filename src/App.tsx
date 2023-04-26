@@ -5,7 +5,7 @@ import TaskList from './Components/TaskList';
 
 function App() {
 	return (
-		<div className='container mx-auto mt-48 w-3/4 p-6'>
+		<div className='container mx-auto mt-48 w-3/4 p-24'>
 			<TitleBar />
 			<AddNewTask />
 			<TaskList />
