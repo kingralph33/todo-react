@@ -1,29 +1,22 @@
-import DeleteButton from './Buttons/DeleteButton';
-
-export default function TaskList() {
-	return (
-		<div className='border-4 border-emerald-600 text-white p-8'>
+export default function TaskList() { return ( <div className='border-4
+border-emerald-600 text-white p-8'>
 			<ul>
-				<li className='grid gap-x-2 grid-cols-2 items-center border-b-2 border-emerald-600 mb-4'>
-					<p>This is a task</p>
-					<div className='w-fit justify-self-end mb-2'>
-						<DeleteButton />
-					</div>
-				</li>
 				<li className='flex items-center border-b-2 border-emerald-600 mb-4'>
-					<label className='flex'>
-						<p>Another task</p>
+					<label className='flex w-full mb-2'>
+						<p className="flex w-10/12">Another task</p>
 						<input
 							type='checkbox'
 							name='taskCompletedBox'
 							id='taskCompletedBox'
+                            className="flex w-5 mr-4 indeterminate:bg-gray-300 checked:accent-emerald-600"
 						/>
-					</label>
-					<input
+                       <input
 						type='submit'
 						value='Delete'
-						className=' flex w-fit justify-self-end mb-2 rounded-full bg-red-800 font-bold text-md px-4 lg:px-8'
-					/>
+						className=' flex w-fit justify-self-end rounded-full bg-red-800 font-bold text-md px-4 lg:px-8'
+					   />
+					</label>
+					
 				</li>
 			</ul>
 		</div>
